@@ -28,11 +28,10 @@ struct ProjectList : View {
                         Image(systemName: "plus")
                             .font(.title)
                     }
-                    PresentationButton(
+                    PresentationButton(destination: ProjectWizard()) {
                         Image(systemName: "person.crop.square")
-                            .font(.title),
-                        destination: ProjectWizard()
-                    )
+                            .font(.title)
+                    }
                 }
             )
         }
